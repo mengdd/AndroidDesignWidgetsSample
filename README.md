@@ -37,4 +37,7 @@ This project is just a summary of their beautiful works.
 
 
 ### Android Reference:
-[Android Support Design Widgets](http://developer.android.com/reference/android/support/design/widget/package-summary.html)  
+[Android Support Design Widgets](http://developer.android.com/reference/android/support/design/widget/package-summary.html)
+
+### Other References:
+<https://guides.codepath.com/android/Handling-Scrolls-with-CoordinatorLayout>
