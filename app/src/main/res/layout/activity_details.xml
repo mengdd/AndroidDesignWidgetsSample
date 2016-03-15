@@ -21,10 +21,14 @@
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginEnd="64dp"
             app:expandedTitleMarginStart="48dp"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:layout_scrollInterpolator="@anim/hero_image_interpolator">
+
+            <!--app:layout_scrollInterpolator="@android:anim/anticipate_overshoot_interpolator"-->
+            <!--app:layout_scrollInterpolator="@android:anim/overshoot_interpolator"-->
 
             <ImageView
-                android:id="@+id/backdrop"
+                android:id="@+id/logo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:contentDescription="@null"
