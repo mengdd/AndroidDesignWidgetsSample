@@ -13,13 +13,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class TabFragment extends Fragment {
     private static final String TAG = "TabFragment";
 
-    @Bind(R.id.list_in_fragment)
+    @BindView(R.id.list_in_fragment)
     RecyclerView recyclerView;
 
     private static final String itemData = "This is some dummy text for shown in list view, every single word will be treated as an item";

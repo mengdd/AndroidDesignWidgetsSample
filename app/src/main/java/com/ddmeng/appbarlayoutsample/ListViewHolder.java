@@ -6,13 +6,13 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 
 public class ListViewHolder extends RecyclerView.ViewHolder {
-    @Bind(R.id.content_text)
+    @BindView(R.id.content_text)
     TextView textView;
 
     public ListViewHolder(View itemView) {

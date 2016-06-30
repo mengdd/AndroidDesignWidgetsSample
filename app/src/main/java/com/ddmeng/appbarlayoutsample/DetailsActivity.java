@@ -8,22 +8,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class DetailsActivity extends AppCompatActivity {
     private static final String TAG = "AppBarInDetails";
-    @Bind(R.id.appbar)
+    @BindView(R.id.appbar)
     AppBarLayout appBarLayout;
-    @Bind(R.id.collapsing_toolbar)
+    @BindView(R.id.collapsing_toolbar)
     CollapsingToolbarLayout collapsingToolbarLayout;
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
-    @Bind(R.id.logo)
+    @BindView(R.id.logo)
     ImageView logo;
 
     @Override
