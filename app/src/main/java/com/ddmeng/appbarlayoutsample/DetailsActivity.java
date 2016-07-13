@@ -65,7 +65,7 @@ public class DetailsActivity extends AppCompatActivity {
                 }).show();
     }
 
-    @OnClick(R.id.logo)
+    @OnClick(R.id.card_item_1)
     void showBottomSheet() {
         int lastState = bottomSheetBehavior.getState();
         switch (lastState) {
@@ -79,6 +79,12 @@ public class DetailsActivity extends AppCompatActivity {
                 bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
                 break;
         }
+    }
+
+    @OnClick(R.id.card_item_2)
+    void showBottomSheetDialog() {
+        MyBottomSheetDialogFragment myBottomSheetDialogFragment = new MyBottomSheetDialogFragment();
+        myBottomSheetDialogFragment.show(getSupportFragmentManager(), MyBottomSheetDialogFragment.TAG);
     }
 
 }
