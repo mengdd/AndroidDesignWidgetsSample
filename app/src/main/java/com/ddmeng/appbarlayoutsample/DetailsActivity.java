@@ -2,6 +2,7 @@ package com.ddmeng.appbarlayoutsample;
 
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -24,6 +25,10 @@ public class DetailsActivity extends AppCompatActivity {
     Toolbar toolbar;
     @BindView(R.id.logo)
     ImageView logo;
+    @BindView(R.id.bottom_sheet_content)
+    View bottomSheetContent;
+
+    private BottomSheetBehavior bottomSheetBehavior;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +48,10 @@ public class DetailsActivity extends AppCompatActivity {
             }
         });
 
+        bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetContent);
+        bottomSheetBehavior.setHideable(true);
+        bottomSheetBehavior.setPeekHeight(100);
+
     }
 
     @OnClick(R.id.floating_action_button)
@@ -54,6 +63,22 @@ public class DetailsActivity extends AppCompatActivity {
                         // DO Sth when Action clicked
                     }
                 }).show();
+    }
+
+    @OnClick(R.id.logo)
+    void showBottomSheet() {
+        int lastState = bottomSheetBehavior.getState();
+        switch (lastState) {
+            case BottomSheetBehavior.STATE_COLLAPSED:
+                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+                break;
+            case BottomSheetBehavior.STATE_EXPANDED:
+                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+                break;
+            case BottomSheetBehavior.STATE_HIDDEN:
+                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                break;
+        }
     }
 
 }
