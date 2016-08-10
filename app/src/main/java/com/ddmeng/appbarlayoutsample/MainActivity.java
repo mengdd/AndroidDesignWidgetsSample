@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        setSupportActionBar(toolbar);
         toolbar.setTitle("Hello AppBarLayout");
         toolbar.setNavigationIcon(R.drawable.ic_menu_black_24dp);
+        setSupportActionBar(toolbar);
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override

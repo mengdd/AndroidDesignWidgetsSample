@@ -1,5 +1,6 @@
 package com.ddmeng.appbarlayoutsample;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.BottomSheetBehavior;
@@ -85,6 +86,11 @@ public class DetailsActivity extends AppCompatActivity {
     void showBottomSheetDialog() {
         MyBottomSheetDialogFragment myBottomSheetDialogFragment = new MyBottomSheetDialogFragment();
         myBottomSheetDialogFragment.show(getSupportFragmentManager(), MyBottomSheetDialogFragment.TAG);
+    }
+
+    @OnClick(R.id.card_item_3)
+    void showNewActivity() {
+        startActivity(new Intent(this, RecyclerViewActivity.class));
     }
 
 }
