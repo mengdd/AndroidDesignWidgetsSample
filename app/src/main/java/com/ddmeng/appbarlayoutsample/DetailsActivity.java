@@ -62,6 +62,7 @@ public class DetailsActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         // DO Sth when Action clicked
+                        startActivity(new Intent(DetailsActivity.this, InputActivity.class));
                     }
                 }).show();
     }
