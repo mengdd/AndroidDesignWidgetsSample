@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.ddmeng.appbarlayoutsample.utils.BottomNavigationViewHelper;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -23,6 +25,7 @@ public class BottomNavigationViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_bottom_navigation_view);
         ButterKnife.bind(this);
         setSupportActionBar(toolbar);
+        BottomNavigationViewHelper.removeShiftMode(bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
