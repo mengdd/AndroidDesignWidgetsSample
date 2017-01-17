@@ -2,8 +2,10 @@ package com.ddmeng.appbarlayoutsample.behavior;
 
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.ViewGroup;
 
 import com.ddmeng.appbarlayoutsample.R;
 
@@ -15,6 +17,8 @@ public class FloatingActionButtonBehaviorActivity extends AppCompatActivity {
 
     @BindView(R.id.container)
     CoordinatorLayout coordinatorLayout;
+    @BindView(R.id.fab)
+    FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
