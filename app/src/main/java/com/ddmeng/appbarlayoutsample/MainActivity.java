@@ -45,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.nav_bottom_navigation: {
                         startActivity(new Intent(MainActivity.this, BottomNavigationViewActivity.class));
+                        break;
+                    }
+                    case R.id.nav_friends: {
+                        startActivity(new Intent(MainActivity.this, InputActivity.class));
+                        break;
                     }
                 }
                 return true;
