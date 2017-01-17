@@ -1,5 +1,6 @@
 package com.ddmeng.appbarlayoutsample;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -41,6 +42,11 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem item) {
                 item.setChecked(true);
                 drawerLayout.closeDrawers();
+                switch (item.getItemId()) {
+                    case R.id.nav_bottom_navigation: {
+                        startActivity(new Intent(MainActivity.this, BottomNavigationViewActivity.class));
+                    }
+                }
                 return true;
             }
         });

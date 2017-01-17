@@ -3,4 +3,13 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="username_required">Username Required</string>
+    <string name="bottom_navigation_view">Bottom Navigation View</string>
+    <string name="friends">Friends</string>
+    <string name="notifications">Notifications</string>
+    <string name="sub_items">Sub items</string>
+    <string name="sub_item_1">Sub item 1</string>
+    <string name="sub_item_2">Sub item 2</string>
+    <string name="bottom_navigation_view_activity">BottomNavigationView Activity</string>
+    <string name="navi_home">Home</string>
+    <string name="nav_star">Star</string>
 </resources>

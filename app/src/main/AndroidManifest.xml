@@ -29,7 +29,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".DetailsActivity" />
         </activity>
-        <activity android:name=".InputActivity"></activity>
+        <activity android:name=".InputActivity" />
+        <activity
+            android:name=".BottomNavigationViewActivity"
+            android:label="@string/bottom_navigation_view_activity" />
     </application>
 
 </manifest>
