@@ -12,4 +12,7 @@
     <string name="bottom_navigation_view_activity">BottomNavigationView Activity</string>
     <string name="navi_home">Home</string>
     <string name="nav_star">Star</string>
+    <string name="show_snackbar">Show Snackbar</string>
+    <string name="input_demo">Input Demo</string>
+    <string name="behavior_demo">Behavior Demo</string>
 </resources>

@@ -11,6 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.ddmeng.appbarlayoutsample.behavior.FloatingActionButtonBehaviorActivity;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -47,8 +49,12 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, BottomNavigationViewActivity.class));
                         break;
                     }
-                    case R.id.nav_friends: {
+                    case R.id.nav_input: {
                         startActivity(new Intent(MainActivity.this, InputActivity.class));
+                        break;
+                    }
+                    case R.id.nav_behavior: {
+                        startActivity(new Intent(MainActivity.this, FloatingActionButtonBehaviorActivity.class));
                         break;
                     }
                 }
